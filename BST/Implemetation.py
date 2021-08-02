@@ -67,7 +67,7 @@ class bst_node:
 
         return max(rheight,lheight)+1
 
-
+# Implemented search operation along with deletion
     def delete_node_util(root,data,exist_flag):
         if root is None:
             print("BST is empty")
@@ -181,7 +181,7 @@ def main():
     bst=bst_node()
     for num in node_value:
        bst.insert(num)
-
+    
     print("choices are :","1. Insert","2. Exist" ,"3. Max", "4. Min" , "5.Find Height","6.Level order Traversal","7.Inorder","8.Postorder","9. Preorder","10.Check_BST","11.Delete Node","12.Quit", sep="\n")
     choice=''
     while (choice != '12'):
